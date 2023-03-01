@@ -1,0 +1,18 @@
+:root {
+    --sidebar-blue: rgba(25, 146, 212, 1);
+    --background-grey: rgba(226,232,240,1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    
+}
+
