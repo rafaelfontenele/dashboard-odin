@@ -53,7 +53,6 @@
     transform: scale(1.5)
 }
 
-.sidebar button,
 button {
     padding-right: 5%;
     width:fit-content;
@@ -126,10 +125,60 @@ button {
 }
 
 .profile-display {
-    background: green;
     padding-left: 3.4%;
     display: flex;
     flex-direction: row;
     gap: 2%;
     align-items: center;
 }
+
+.username-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5%;
+}
+
+.username {
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+}
+
+.at {
+    font-weight: 600;
+    margin-left: 10px;
+    padding-top: 2px;
+}
+.at::before {
+    content: '(@'
+}
+.at::after {
+    content:')'
+}
+
+.header-bottom-right {
+    display: flex;
+    flex-direction: row;
+    gap: 20%;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right:10%;
+}
+
+.header-bottom-right button {
+    background: white;
+    border-radius: 20px;
+    padding: 4px 16px;
+    transition: all var(--transition-time) ease-in-out;
+}
+
+.header-bottom-right button:hover {
+    box-shadow: 1px 2px black;
+    transform: scale(1.05);
+}
+
+.header-bottom-right button:active {
+    transform: scale(0.95);
+}
+
+
