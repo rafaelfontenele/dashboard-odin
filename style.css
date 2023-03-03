@@ -13,15 +13,13 @@
     font-size: 20px;
 }
 
-.wrapper {
-    
-    background-color: orange;
 
+.wrapper {
     display: grid;
     width: 100vw;
     height: 100vh;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 25% auto;
+    grid-template-rows: 25% 75%;
 
 }
 
@@ -31,7 +29,7 @@
     grid-row: 1/4;
     grid-column: 1;
     display: inherit;
-    grid-template-rows: repeat(auto-fill, 3.1%);
+    grid-template-rows: repeat(auto-fill, 7.5%);
     grid-template-columns: 20% auto;
     padding-left: 6%;
 }
@@ -73,7 +71,7 @@ button {
 }
 
 .header {
-    background: rgba(240, 240, 240, 0.2);
+    background: rgba(148, 148, 148, 0.575);
     display: grid;
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 2fr 3fr;
@@ -184,6 +182,7 @@ button {
 }
 
 .main {
+    background: rgba(150,150,150,0.3);
     display: grid;
     grid-row: 2;
     grid-column: 2;
@@ -195,10 +194,69 @@ button {
 
 .cards-wrapper {
     display: grid;
-    background-color: red;
     grid-row: 2/-1;
     grid-column: 1;
-    padding: 2%;
-    grid-template-columns: ;
+    padding: 3%;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
+    gap: 1%;
+}
+
+.card {
+    background-color: rgba(255,255,255,0.3);
+    border: 1px solid rgba(0,0,0,0.3);
+    display: grid;
+    grid-template-rows: 70% 30%;
+    padding: 5%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transition: all var(--transition-time) ease-in-out;
+}
+
+.card:hover {
+    box-shadow: none;
+}
+
+.card-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+.card-title {
+    color: rgba(0,0,0,0.9);
+    font-size: 20px;
+    font-weight: 600;
+}
+.card-text {
+    color: rgba(0,0,0,0.6);
+    font-size: 16px;
+    font-weight: 400;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    text-overflow: ellipsis;
+}
+
+.card-buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 5%;
+}
+
+.announcements-wrapper {
+    background-color: white;
+    margin-top: 5%;
+    display: grid;
+    grid-template-rows: repeat(3, 32%);
+    gap: 2%;
+    padding: 3% 1%;
+}
+
+.announcement {
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
 }
 
