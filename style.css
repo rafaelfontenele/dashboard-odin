@@ -191,12 +191,17 @@ button {
     padding: 2%;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
 }
+.main span {
+    font-weight: 550;
+    font-size: 16px;
+    margin-top: 1%;
+}
 
 .cards-wrapper {
     display: grid;
     grid-row: 2/-1;
     grid-column: 1;
-    padding: 3%;
+    padding: 3% 3% 3% 0;
     grid-template-columns: 33% 33% 33%;
     grid-template-rows: 50% 50%;
     gap: 1%;
@@ -245,18 +250,102 @@ button {
 }
 
 .announcements-wrapper {
-    background-color: white;
+    background-color: rgba(255,255,255,0.3);
     margin-top: 5%;
+    margin-bottom: 2%;
     display: grid;
     grid-template-rows: repeat(3, 32%);
     gap: 2%;
     padding: 3% 1%;
-}
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}    
 
 .announcement {
-    border: 1px solid black;
     display: grid;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
+
+.announcement .title {
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+}    
+
+.announcement .text {
+    font-size: 12px;
+    color: rgba(0,0,0,0.5);
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+}    
+
+.announcement:nth-child(1) {
+    border-style: none none solid none;
+}    
+
+
+.announcement:nth-child(2) {
+    border-style: none none none none;
+}    
+
+
+.announcement:nth-child(3) {
+    border-style: solid none none none;
+}    
+
+
+
+.trending-wrapper {
+    background-color: rgba(255,255,255,0.3);
+    margin-top: 5%;
+    margin-bottom: 2%;
+    display: grid;
+    grid-template-rows: repeat(3, 32%);
+    gap: 2%;
+    padding: 3% 1%;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}    
+
+.trending-profile {
+    display: grid;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    grid-template-columns: 30% 70%;
+    opacity: 80%;
+}
+
+.trending-profile:hover {
+    opacity: 100%;
+}
+
+.trending-profile .profile-img {
+    align-self: flex-end;
+    padding-left: 20%;
+}    
+.trending-profile img {
+    width: 40px;
+}
+
+.trending-profile .profile-text {
+    font-size: 12px;
+    text-overflow: ellipsis;
+    line-clamp: 1;
+    -webkit-line-clamp: 1;
+}    
+
+.trending-profile:nth-child(1) {
+    border-style: none none solid none;
+}    
+
+
+.trending-profile:nth-child(2) {
+    border-style: none none none none;
+}    
+
+
+.trending-profile:nth-child(3) {
+    border-style: solid none none none;
+}    
+
 
