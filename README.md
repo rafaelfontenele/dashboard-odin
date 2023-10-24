@@ -4,4 +4,4 @@ Admin dashboard project for the-odin-project (https://www.theodinproject.com/les
 
 LIVE:
 
-https://etzoider.github.io/dashboard-odin/
+https://rafaelfontenele.github.io/dashboard-odin/
